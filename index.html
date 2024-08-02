@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<!--Google Fonts : Rubik-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside>
+    <h2>Simple booking</h2>
+    <p>
+      Stay in touch with our dog walkers through the chat interface. This makes it easy to
+      discuss arrangements and make bookings. Once the walk has been completed you can rate
+      your walker and book again all through the chat.
+    </p>
+  </aside>
+  <span class="banner-violet"><!--panel violet--></span>
+  <span class="banner-gray"><!--panel gray--></span>
+  <main class="phone">
+    <div class="content-phone">
+      <nav>
+        <div class="content-avatar">
+          <span class="banner-white"><!--banner white--></span>
+          <span class="left-arrow">&lt;</span>
+          <img src="/images/avatar.jpg" alt="Samuel Green">
+          <div class="text-avatar">
+            <h1>Samuel Green</h1>
+            <span>Available to Walk</span>
+          </div>
+        </div>
+        <span class="three-point">...</span>
+      </nav>
+      <div class="chat">
+        <div class="row-left">
+          <span class="message-violet">That sounds great. I’d be happy with that.</span>
+        </div>
+        <div class="row-left">
+          <span class="message-violet">Could you send over some pictures of your dog, please?</span>
+        </div>
+        <div class="row-right">
+          <div class="message-img">
+            <img src="./images/dog-image-1.jpg" alt="dog">
+            <img src="./images/dog-image-2.jpg" alt="dog">
+            <img src="./images/dog-image-3.jpg" alt="dog">
+          </div>
+        </div>
+        <div class="row-right">
+        <span class="message-white">Here are a few pictures. She’s a happy girl!</span>
+      </div>
+      <div class="row-right">
+        <span class="message-white">Can you make it?</span>
+      </div>
+      <div class="row-left">
+        <span class="message-violet">She looks so happy! The time we discussed works. How long shall I take her out for?</span>
+      </div>
+      <div class="row-left">
+        <div class="message-bg">
+          <div>
+            <div class="circle"></div>
+            <span>30 minute walk</span>
+          </div>
+          <span class="money">$29</span>
+        </div>
+      </div>
+        <div class="row-left">
+          <div class="message-bg">
+            <div>
+              <div class="circle"></div>
+              <span>1 hour walk </span>
+            </div>
+            <span class="money">$49</span>
+          </div>
+        </div>
+      </div>
+      <form >
+        <label for="message">Message</label>
+        <input type="text" placeholder="Type a message…" name="message" id="message">
+        <button onclick="click" id="btn-form">></button>
+      </form>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/jaherreraf">José Alejandro Herrera Franco</a>.
+  </footer>
+</body>
+<script>
+  const btn = document.querySelector('#btn-form')
+  const click = (event)=>{
+    event.preventDefault()
+    const input = document.querySelector('#message')
+    input.value = ''
+  }
+  btn.addEventListener('click',click)
+</script>
+</html>
