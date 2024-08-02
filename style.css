@@ -237,7 +237,6 @@ form input:focus {
     outline: none;
 }
 footer{
-    background-color:red;
     position:fixed;
     bottom:0;
     left:30%;
